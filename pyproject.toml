@@ -1,6 +1,20 @@
+[project]
+name = "hdl_modules"
+version = "5.0.1"
+description = "Reusable, high-quality, peer-reviewed VHDL building blocks."
+readme = "readme.rst"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["hdl_modules"]
+package-data = { "hdl_modules" = ["**/*.vhd", "**/*.tcl"] }
+
 [tool.black]
 line-length = 100
-
 
 [tool.isort]
 # Make base formatting compatible with black settings
